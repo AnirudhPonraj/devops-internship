@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: Arial, sans-serif; padding: 40px; }
+  h1 { color: #333; }
+  table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+  th { background-color: #1a1a2e; color: white; padding: 12px; text-align: left; }
+  td { padding: 10px 12px; border: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background-color: #f5f5f5; }
+  tr:hover { background-color: #e8e8e8; }
+</style>
+</head>
+<body>
+<h1>CI/CD Tool Comparison Matrix</h1>
+<table>
+  <tr>
+    <th>Criteria</th><th>GitHub Actions</th><th>Jenkins</th><th>GitLab CI</th>
+  </tr>
+  <tr><td><b>Setup</b></td><td>Zero setup — built into GitHub</td><td>Self-hosted, manual install required</td><td>Built into GitLab, minimal config needed</td></tr>
+  <tr><td><b>Cost</b></td><td>Free for public repos; 2000 min/month free for private</td><td>Free (open source), but server costs apply</td><td>Free tier available; paid for more minutes</td></tr>
+  <tr><td><b>Scalability</b></td><td>Auto-scales with GitHub-hosted runners</td><td>Manual scaling via agent nodes</td><td>Auto-scales with GitLab-hosted runners</td></tr>
+  <tr><td><b>Secrets</b></td><td>GitHub Secrets (encrypted, UI-managed)</td><td>Credentials plugin (Jenkins Credentials)</td><td>GitLab CI/CD Variables (masked/protected)</td></tr>
+  <tr><td><b>Community</b></td><td>Large, fast-growing; GitHub Marketplace</td><td>Massive, mature; 1800+ plugins</td><td>Strong, especially in enterprise DevOps</td></tr>
+  <tr><td><b>Config</b></td><td>YAML in .github/workflows/</td><td>Jenkinsfile (Groovy DSL)</td><td>YAML in .gitlab-ci.yml</td></tr>
+  <tr><td><b>Best For</b></td><td>GitHub-native projects, quick setup</td><td>Complex enterprise pipelines, full control</td><td>GitLab-hosted projects, end-to-end DevOps</td></tr>
+</table>
+</body>
+</html>
